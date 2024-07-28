@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>span</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+<body>
+<p> 
+		<span><strong>1.</strong> Before animation </span>
+		<span><strong>2.</strong> At process animation </span>
+		<span><strong>3.</strong> After Animation</span>
+</p>
+<p>
+	<strong>none:</strong> стили анимации не влияют на стиль по умолчанию.</p>
+	<p><span>Красный по умолчанию</span>
+	<span>От синего к зеленому</span>
+	<span>Обратно к красному</span></p>
+	<div class="none">
+		<div></div>
+	</div>
+<p>
+	<strong>forwards:</strong> последние стили, применяемые в конце анимации, сохранятются впоследствии.</p>
+	<p><span>Красный по умолчанию</span>
+	<span>От синего к зеленому</span>
+	<span>Остается зеленым</span></p>
+	<div class="forwards">
+		<div></div>
+	</div>
+<p>
+	<strong>backwards:</strong> стили анимации будут применяться до того, как на самом деле начинается анимация.</p>
+	<p><span>Уже синий</span>
+	<span>От синего к зеленому</span>
+	<span>Обратно к красному</span></p>
+	<div class="blackwards">
+		<div></div>
+	</div>
+<p>
+	<strong>Both:</strong> стили применяются до и после вопроизведения анимаии.</p>
+	<p><span>Уже синий</span>
+	<span>От синего к зеленому</span>
+	<span>Остается зеленым</span></p>
+	<div class="both">
+		<div></div>
+	</div>
+</body>
+</html>

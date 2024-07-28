@@ -1,0 +1,87 @@
+body {background-color: rgb(56, 56, 109);}
+/* верхняя строка сайта */
+.list {
+	list-style: none;
+	text-align: center;
+	display: block;
+	background: lightpink;
+	padding: 0;
+}
+.listLi {
+	display: inline-block;
+	text-align: center;
+	padding: 10px 20px;
+}
+
+.listLi a::after {
+	content: '';
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	border: 1px solid green;
+	border-radius: 8px;
+	top: 2.9em;
+	margin-left: 30px;
+}
+#del::after {
+	display: none;
+}
+.list a {
+	text-decoration: none;
+	color: #333;
+	display: block;
+	padding: 15px;
+}
+
+.listLi:hover {
+	background-color: rgb(197, 109, 122);
+	cursor: pointer;
+}
+/* верхняя строка сайта */
+.projects {
+	background: lightsalmon;
+	width: 65%;
+	padding: 15px;
+	border-radius: 10px;
+	margin: auto;
+	box-shadow: 0 7px 7px 7px rgba(1, 1, 1, 0.4);
+}
+
+.project {
+	background-image: linear-gradient(to right, rgb(10, 102, 163), rgb(44, 151, 151));
+	padding: 15px;
+	margin: 35px 15px;
+	border-radius: 10px;
+}
+
+.projects h2 {
+	padding: 0;
+	margin: 5px 15px 15px 15px;
+		color: transparent;
+		text-transform: uppercase;
+		-webkit-background-clip: text;
+		background-clip: text;
+		background-image: linear-gradient(rgb(95, 88, 49), rgb(85, 252, 85),rgb(95, 88, 49));
+}
+
+.project label {
+	display: inline-block;
+	width: 70%;
+}
+.project button {
+	padding: 10px;
+	display: inline;
+	background-image: radial-gradient(rgb(45, 185, 80), rgb(6, 105, 56));
+	border-radius: 10px;
+	border: none;
+	position: relative;
+	top: -2.5em;
+	left: 5em;
+	cursor: pointer;
+	box-shadow: 2px 2px rgba(1, 1, 1, 0.9);
+}
+.project button:active {
+	top: -2.3em;
+	left: 5.2em;
+	box-shadow: none;
+}

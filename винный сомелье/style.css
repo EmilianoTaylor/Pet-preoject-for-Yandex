@@ -1,0 +1,112 @@
+body {
+	background-color: #444;
+}
+
+.header {
+color: transparent;
+text-transform: uppercase;
+-webkit-background-clip: text;
+background-clip: text;
+background-image: linear-gradient(gold, green,gold);
+}
+
+.vine {
+	height: 270px;
+	display: flex;
+	margin-right: 10px;
+	width: 100%;
+}
+
+.redWine {	
+	width: 24%;
+	background-color: aliceblue;
+	text-align: center;
+	border-radius: 15px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.head {
+background: skyblue;
+border-radius: 15px;
+margin: 0;
+padding: 10px;
+}
+
+.body {
+	padding: 0px 15px;
+}
+
+strong {
+	margin-right: 55px;
+}
+
+#over {
+overflow: hidden;
+}
+
+.list {
+	text-decoration: none;
+	padding: 5px;
+	height: 100%;
+	overflow: auto;
+}
+
+li {
+padding: 8px;
+cursor: pointer;
+}
+
+.anim {
+	background-color: green;
+}
+
+#newOver {
+	margin-top: 10px;
+	overflow: auto;
+}
+
+.chIn {
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px;
+}
+.chIn + label {
+	position: relative;
+	padding: 0 0 0 40px;
+	cursor: pointer;
+}
+
+.chIn + label::before {
+	content: ''; 
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 30px;
+	height: 16px;
+	border-radius: 7px;
+	background: #CDD1DA;
+	box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
+	transition: 0.2s;
+}
+
+.chIn + label::after {
+	content: ''; 
+	position: absolute;
+	top: 4px;
+	left: 2px;
+	width: 11px;
+	height: 11px;
+	border-radius: 5px;
+	background: green;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	transition: 0.2s;
+}
+
+.chIn:checked + label::before {
+	background: #9FD468;
+}
+
+.chIn:checked + label::after {
+	left: 17px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>span</title>
+		<link rel="stylesheet" href="menu.css">
+	</head>
+<body>
+<ul class="nav">
+	<li class="nav-item">
+		<a class="nav-link" href="#">Обычная ссылка</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#">Выпадающий список</a>
+		<ul class="subnav">
+			<li class="subnav-item">
+				<a class="subnav-link" href="#">Ссылка</a>
+			</li>
+			<li class="subnav-item">
+				<a class="subnav-link" href="#">Ссылка</a>
+			</li>
+		</ul>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" href="#">Обычная Ссылка</a>
+	</li>
+</ul>
+</div>
+<div class="code">
+	<h6>CSS code</h6>
+	<label>
+		<p>.nav {
+				display: flex;
+				margin: 80px;
+				padding: 0;
+				list-style: none;
+			}</p>
+
+			<p>.nav-item {
+				position: relative;
+			}</p>
+
+			<p>.nav-item:hover > .subnav {
+				display: block;}
+			</p>
+
+			<p>.nav-link {
+			display: block;
+			padding: 8px 16px;
+			background-color: #444;
+			color: #fff;
+			text-decoration: none;}</p>
+
+			<p>.nav-link:hover {
+			background-color: #333;
+			}</p>
+
+			<p>.subnav {
+			display: none;
+			top: 100%;
+			min-width: 100% ;
+			position: absolute;
+			list-style: none;
+			z-index: 1;
+			margin: 0;
+			padding: 0;
+			}</p>
+			<p>.subnav-link {
+				padding: 8px 16px;
+				background-color: #333;
+				color: #fff;
+				text-decoration: none;
+				display: block;
+			}</p>
+			<p>.subnav-link:hover {
+				background-color: #444;
+			}</p>
+
+	</label>
+</div>
+	<script src="menu.js"></script>
+</body>
+</html>
+

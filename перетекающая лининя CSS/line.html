@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>span</title>
+		<link rel="stylesheet" href="line.css">
+	</head>
+<body>
+	<div class="container">
+		<ul>
+			<li><span>Домой</span></li>
+			<li><span>О нас</span></li>
+			<li><span>Контакты</span></li>
+		</ul>
+	</div>
+	<div class="code">
+		<h6>CSS code</h6>
+		<label>
+			<p>span {
+				position: relative;
+				display: block;
+				cursor: pointer;
+			}</p>
+				<p>span::before, span::after { 
+					content: "";
+					position: absolute;
+					width: 0%;
+					height: 1px;
+					top: 50%;
+					margin-top: -0.5px;
+					background: #fff;
+					}</p>
+				<p>span:hover::before {
+					background: #fff;
+					width: 100%;
+					transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+				}</p>
+				<p>span:hover::before {
+						background: #fff;
+						width: 100%;
+						transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+					}</p>
+				<p>span:hover::before {
+					background: #fff;
+					width: 100%;
+					transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+				}</p>
+				<p>span:hover::after {
+					background: transparent;
+					width: 100%;
+					transition: 0s;
+				}</p>
+		</label>
+	</div>
+	<script src="the.js"></script>
+</body>
+</html>
+

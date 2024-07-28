@@ -1,0 +1,55 @@
+
+body {background: #474242;}
+
+.container {width: 60%;
+margin: 0 auto; }
+
+h1 {color: #fff; font-family: 'Times New Roman', Times, serif;}
+
+input {width: 80%; 
+	height: 30px;
+	margin-bottom: 10px;
+	border-radius: 5px; 
+	border: none;}
+
+button {width: 80%; 
+	height: 30px; 
+	margin-bottom: 10px;
+	border-radius: 5px; 
+	border: none;}
+
+#list {width: 80%; 
+	height: 30px; 
+	margin-bottom: 10px;
+	border-radius: 5px; 
+	border: none;}
+
+.list-group-item {width: 80%;
+		height: 30px;
+		margin-bottom: 10px;
+		border-radius: 5px;
+		border: none;
+		display: inline-block;
+		background: wheat;
+		padding: 8px;
+		overflow: hidden;
+	}
+
+
+span.btn {height: 30px; width: 30px;
+	border: 1px solid black;
+	border-radius: 1px;
+	padding: 8px;
+	text-align: center;
+	top: 10%;
+	left: 80%;
+	position: relative;
+	}
+
+span.btn:active {position: relative; }
+
+
+
+.btn-success {background-color: green; }
+.btn-danger {background-color: crimson; }
+

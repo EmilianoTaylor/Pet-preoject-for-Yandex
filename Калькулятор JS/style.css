@@ -1,0 +1,76 @@
+
+body {background: #474242;}
+
+.container {width: 60%;
+margin: 0 auto;
+margin-bottom: 900px; }
+
+h1 {color: #fff; font-family: 'Times New Roman', Times, serif;}
+
+input {width: 80%; 
+	height: 30px; 
+	margin-bottom: 10px;
+	border-radius: 5px; 
+	border: none;}
+
+.d-flex.mb-2 {width: 78%;
+margin: 5px 7px 10px;}
+
+#submit {background-color: #474242; 
+	border: 2px solid aqua; 
+	color: aqua; 
+	width: 80%; 
+	height: 25px; 
+	border-radius: 5px;
+	box-shadow: 3px 3px 0px 0px rgba(1, 1, 1, 0.5);}
+
+#submit:active, #plus:active, #minus:active {top: 2px; left: 2px; position: relative; box-shadow: none;}
+
+#plus {background-color: green; 
+height: 30px; 
+width: 48%;
+border: none; 
+margin-right: 10px; 
+border-radius: 5px;
+box-shadow: 3px 3px 0px 0px rgba(1, 1, 1, 0.5);}
+
+#minus {background-color: crimson; 
+height: 30px; 
+width: 48%;
+border: none;
+border-radius: 5px;
+box-shadow: 3px 3px 0px 0px rgba(1, 1, 1, 0.5);
+}
+
+.twxt-bg-light {width: 80%; 
+	background-color: #fff; 
+	height: 60px;
+	text-align: center;
+border-radius: 5px;}
+
+img {border: 1px solid aquamarine;}
+
+.over, .float {
+	margin-top: 100px;
+	margin-left: 50px;
+	text-align: justify;
+}
+
+.border {
+	width: 400px;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 2em;
+	box-shadow: 3px 1.5px rgba(1, 1, 1, 0.5);
+	padding: 15px;
+	text-shadow: 1px 1px rgba(1, 1, 1, 0.5);
+}
+
+.anim {
+	transform: translateX(-20%);
+	transition: all 2s;
+	opacity: 0;
+}
+
+.anim.active {transform: translateX(0);
+	opacity: 1;
+}

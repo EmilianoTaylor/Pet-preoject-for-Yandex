@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>span</title>
+		<link rel="stylesheet" href="HideSeek.css">
+	</head>
+<body>
+	<div id="sweeties" class="menu">
+		<span class="title">Programm</span>
+	<ul>
+		<li>React</li>
+		<li>Node.js</li>
+		<li>jQuery</li>
+	</ul>
+	</div>
+	<div class="code">
+		<h6>CSS code</h6>
+		<label>
+<p>.menu ul {
+	margin: 0;
+	display: none;
+	padding-left: 20px;
+}</p>
+<p>.menu .title {
+	font-size: 18px;
+	cursor: pointer;
+}</p>
+<p>	.menu .title::before {
+		content: "> ";
+		font-size: 80%;
+		color: green;
+	}
+</p>
+<p>.menu.vision ul{
+	display: block;
+}</p>
+		</label>
+	</div>
+	<div class="code">
+		<h6>JS Code</h6>
+		<label>
+<p>let menuElem = document.getElementById('')</p>
+<p>let titleElem = menuElem.querySelector('.title')</p>
+<p>titleElem.onclick = function () {
+	menuElem.classList.toggle ('vision');
+	}</p>
+<p>titleElem.onmousedown = function () {
+	return false;
+}</p>
+		</label>
+	</div>
+	<script src="HideSeek.js"></script>
+</body>
+</html>
+
